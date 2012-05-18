@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   
+        
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:textColor="#4169e1" />
+     <TextView 
+         android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:" 
+        android:layout_below="@id/Name" 
+        android:paddingRight="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Address"
+        android:textColor="#7CFC00"
+        android:layout_toRightOf="@+id/address"
+        android:layout_below="@id/Name"
+         />
+     <TextView 
+         android:id="@+id/cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuisines Available:" 
+        android:layout_below="@id/Address"
+        android:paddingRight="10dp"
+          />
+          <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Cuisines"
+        android:textColor="#0000FF"
+        android:layout_toRightOf="@id/cuisine"
+        android:layout_below="@id/Address"
+         />
+      <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rating"
+        android:textColor="#0000FF"
+        android:layout_below="@+id/Cuisines"
+        android:stepSize="1"
+         />
+
+</RelativeLayout>
